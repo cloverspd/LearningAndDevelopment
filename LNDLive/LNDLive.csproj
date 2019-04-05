@@ -1,0 +1,210 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C9581FD-1E98-41AF-9E31-4A00DCD5EF3E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LNDLive</RootNamespace>
+    <AssemblyName>LNDLive</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <Content Include="Webpart\AllProgramDetails.txt" />
+    <Content Include="Webpart\ChartForProjetcs.html" />
+    <Content Include="Webpart\CommonAttendance.txt" />
+    <Content Include="Webpart\CommonFeedback.txt" />
+    <Content Include="Webpart\ConfigurationParameters.txt" />
+    <Content Include="Webpart\DayWiseInductionFeedbackManualEntry.txt" />
+    <Content Include="Webpart\EmailNotification.txt" />
+    <Content Include="Webpart\EmailNotification_copy%281%29.txt" />
+    <Content Include="Webpart\ExecutiveDashBoard.txt" />
+    <Content Include="Webpart\ExecutiveDashBoard_copy%281%29.txt" />
+    <Content Include="Webpart\FeedBackAnalytics.txt" />
+    <Content Include="Webpart\FeedBackAnalytics_copy%281%29.txt" />
+    <Content Include="Webpart\FeedbackDashboardForm.txt" />
+    <Content Include="Webpart\FeedBackForm.txt" />
+    <Content Include="Webpart\FeedbackManualEntry.txt" />
+    <Content Include="Webpart\FeedbackReportForEmpDetails.txt" />
+    <Content Include="Webpart\HomePageDashBoard.txt" />
+    <Content Include="Webpart\InductionFeedbackForm.txt" />
+    <Content Include="Webpart\InductionFeedbackManualEntry.txt" />
+    <Content Include="Webpart\InductionFeedbackReport.txt" />
+    <Content Include="Webpart\InductionFeedbackReport_copy%281%29.txt" />
+    <Content Include="Webpart\InductionFeedbackWeightage.txt" />
+    <Content Include="Webpart\InvitationforInductionFeedback.txt" />
+    <Content Include="Webpart\InvitationforInductionFeedback_copy%281%29.txt" />
+    <Content Include="Webpart\Invitationforoverallfeedback.txt" />
+    <Content Include="Webpart\Invitationforoverallfeedback_copy%281%29.txt" />
+    <Content Include="Webpart\ManageAttendance.txt" />
+    <Content Include="Webpart\ManageAttendance_copy%281%29.txt" />
+    <Content Include="Webpart\ManageAttendance_copy%282%29.txt" />
+    <Content Include="Webpart\ManageAttendance_copy%283%29.txt" />
+    <Content Include="Webpart\ManageCancellation.txt" />
+    <Content Include="Webpart\ManageConfirmation.txt" />
+    <Content Include="Webpart\ManageFeedbackDetails.txt" />
+    <Content Include="Webpart\ManageRemainders.txt" />
+    <Content Include="Webpart\ManageRemainders_copy%281%29.txt" />
+    <Content Include="Webpart\ManageRemainders_copy%282%29.txt" />
+    <Content Include="Webpart\ManageRemainders_copy%283%29.txt" />
+    <Content Include="Webpart\ManageRemainders_copy%284%29.txt" />
+    <Content Include="Webpart\ManageRemainders_copy%285%29.txt" />
+    <Content Include="Webpart\ManagerFeedbackForm.txt" />
+    <Content Include="Webpart\ManagerFeedbackInitiate.txt" />
+    <Content Include="Webpart\ManagerFeedbackReport.txt" />
+    <Content Include="Webpart\ManagerFeedbackReport_copy%281%29.txt" />
+    <Content Include="Webpart\ManagerFeedbackWeightage.txt" />
+    <Content Include="Webpart\MISReports.txt" />
+    <Content Include="Webpart\MISReports_copy%281%29.txt" />
+    <Content Include="Webpart\MISReports_copy%282%29.txt" />
+    <Content Include="Webpart\MISReports_copy%283%29.txt" />
+    <Content Include="Webpart\MISReports_copy%284%29.txt" />
+    <Content Include="Webpart\MISReports_copy%285%29.txt" />
+    <Content Include="Webpart\MISReports_copy%286%29.txt" />
+    <Content Include="Webpart\MISReports_copy%287%29.txt" />
+    <Content Include="Webpart\MISUserAnalytics.txt" />
+    <Content Include="Webpart\NonInductionFeedbackForm.txt" />
+    <Content Include="Webpart\NonInductionFeedbackForm_copy%281%29.txt" />
+    <Content Include="Webpart\NonInductionFeedbackManualEntry.txt" />
+    <Content Include="Webpart\NonInductionFeedbackManualEntry_copy%281%29.txt" />
+    <Content Include="Webpart\NonInductionFeedbackReport.txt" />
+    <Content Include="Webpart\NonInductionFeedbackReport_copy%281%29.txt" />
+    <Content Include="Webpart\NonInductionFeedbackReport_copy%282%29.txt" />
+    <Content Include="Webpart\NonInductionFeedbackWeightage.txt" />
+    <Content Include="Webpart\NormalUserPageRedirect.txt" />
+    <Content Include="Webpart\OverAllFeedbackForm.txt" />
+    <Content Include="Webpart\OverAllFeedbackForm_copy%281%29.txt" />
+    <Content Include="Webpart\OverAllFeedbackReport.txt" />
+    <Content Include="Webpart\OverallFeedbackWeightAge.txt" />
+    <Content Include="Webpart\ProgramCanllecation.txt" />
+    <Content Include="Webpart\ProgramConfirationForm.txt" />
+    <Content Include="Webpart\ProgramConfirationForm_copy%281%29.txt" />
+    <Content Include="Webpart\ProgramCreationWebpart.txt" />
+    <Content Include="Webpart\ProgramCreationWebpart_BAK.txt" />
+    <Content Include="Webpart\ProgramCreationWebpart_copy%281%29.txt" />
+    <Content Include="Webpart\ProgramCreationWebpart_copy%282%29.txt" />
+    <Content Include="Webpart\ProgramCreationWebpart_copy%283%29.txt" />
+    <Content Include="Webpart\ProgramCreationWebpart_copy%284%29.txt" />
+    <Content Include="Webpart\ProgramCreationWebpart_copy%285%29.txt" />
+    <Content Include="Webpart\ProgramDetailsUpdate.txt" />
+    <Content Include="Webpart\ProgramDetailsUpdate_copy%281%29.txt" />
+    <Content Include="Webpart\ProgramDetailsUpdate_copy%282%29.txt" />
+    <Content Include="Webpart\ProgramVenueDetails.txt" />
+    <Content Include="Webpart\SpeakerFeedbackReason.txt" />
+    <Content Include="Webpart\task.html" />
+    <Content Include="Webpart\TeamLeaderView.txt" />
+    <Content Include="Webpart\TestEmailNotification.txt" />
+    <Content Include="Webpart\testInvitation.txt" />
+    <Content Include="Webpart\testInvitation_copy%281%29.txt" />
+    <Content Include="Webpart\testInvitation_copy%282%29.txt" />
+    <Content Include="Webpart\testInvitation_copy%283%29.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64788</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64788/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
